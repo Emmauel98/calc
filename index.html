@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div id="mode">
+        <p><i class="fa-solid fa-toggle-on" id="toggle-on"></i></p>
+        <i class="fa-solid fa-toggle-off" id="toggle-off"></i>
+    </div>
+    <div class="container">
+        <div class="calculator">
+            <h3 class="title"> Tip Calculator</h3>
+            <br>
+            <hr>
+            <br>
+            <label for="bill" class="bill_text"> Bill Amount</label> <br>
+            <button><i class="fa-solid fa-dollar-sign"></i></button><input type="number" class="bill_amount">
+            <br><br>
+            <label for="guest" class="guest"> Number of Guest</label> <br>
+            <button><i class="fa-solid fa-person"></i></button><input type="number" class="no_guest">
+            <br><br>
+            <label for="service" class="service"> Service Quality</label>
+            <br>
+            <select class="quality">
+                <option disabled selected value="0"> Choose...</option>
+                <option value="0.3">30% - outstanding</option>
+                <option value="0.2">20% - Good </option>
+                <option value="0.15">15% - Okay</option>
+                <option value="0.1">10% - Bad </option>
+                <option value="0.05">5% - Terrible</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <hr>
+            <br>
+            <button class="calc">Calculate</button>
+        </div>
+        <div class="tip_amount"></div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
